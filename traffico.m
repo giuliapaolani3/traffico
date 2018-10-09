@@ -4,31 +4,10 @@ clc;
 
 rng('shuffle');
 
-% Nroads = 5;
-% Pcross = 0.08;
-% 
-% Adj = sparse(zeros(Nroads));
-% 
-% Adj = triu(rand(Nroads), 1);
-% Adj = Adj > 1-Pcross;
-% Adj = Adj | Adj';
-% 
-% figure
-% imagesc(Adj)
-% colorbar
-
-% Adj = [[0, 1, 0, 0, 1],
-%     [1, 0, 1, 1, 0],
-%     [0, 1, 0, 1, 0],
-%     [0, 1, 1, 0, 1],
-%     [1, 0, 0, 1, 0]]
-% 
-% G = graph(Adj)
-% 
-% plot(G)
-
-NRoads = 100;
+NRoads = 49;
 CitySize = sqrt(NRoads);
+
+NCars = 30;
 
 PCross = 0.8;
 
