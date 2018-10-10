@@ -12,10 +12,6 @@ Adj = createcitygraph(City_x, City_y, PCross, 'chebychev')
 G = graph(Adj)
 plot(G)
 
-% y = floor(randfixedsum(NRoads, 1, NCars, 0, NCars))
-
-
-
 
 
 
