@@ -15,4 +15,9 @@ Rem = triu(rand(x*y), 1) < p;
 Rem = Rem & Rem';
 Adj = Adj & Rem;
 
+A = rand(x*y);
+A = A - tril(A,-1) + triu(A,1)';
+
+Adj = times(Adj, A);
+
 return
